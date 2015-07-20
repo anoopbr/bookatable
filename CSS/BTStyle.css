@@ -1,0 +1,110 @@
+html {
+
+    background-image: url("../Images/pattern1.jpg");
+    background-color: rgba(0, 0, 0, 0.99);
+    background-attachment: fixed;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.navbar{
+    background: linear-gradient(#CAF2D0, #CCE9CB, #BADFB4);
+    border: none;
+    border-radius: 0px;
+    box-shadow: .25em .25em 1em #132213;
+    z-index: 999;
+    color: #A9728B;
+}
+
+.navbar-brand{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    font-weight: 600;
+    color: #7c4d63;
+}
+.bt-navbar-brand-logo{
+    color: #BADFB4;
+    background: #7c4d63;
+    padding: .25em;
+    border-radius: 50%;
+    box-shadow: .1em .1em .25em #555;
+}
+
+ .fa-bt{
+    color: rgba(255, 246, 248, 0.99);
+}
+
+.fa-bt-inverse, .fa-btn-inverse{
+    color: #A9728B;
+}
+.fa-btn-inverse:hover{
+    background: linear-gradient(#A9728B, #7c4d63);
+    color: #fff;
+    text-shadow: none;
+    border-color: #7c4d63;
+}
+
+.fa-bt-transparent{
+    background: none;
+    color: #A9728B;
+    border: none;
+    box-shadow: none;
+}
+.fa-bt-transparent:hover{
+    background: none;
+    color: #7c4d63;
+}
+
+.bt-overlay-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width: 400px;
+    /*background: radial-gradient(#B2E7B9, #DCFDDD, #4D8E43);*/
+    background: radial-gradient(#CDCDCD, #FFF, #8B8B8B);
+    border-radius: 50%;
+    box-shadow: .2em .2em 1em #222;
+}
+
+.bt-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    /*background: radial-gradient(#B2E7B9, #DCFDDD, #4D8E43);*/
+    background: linear-gradient(#dfdfdf, #FFF, #f0f0f0);
+    box-shadow: .2em .2em 1em #222;
+    border-radius: 5px;
+    padding-bottom: 2em;
+}
+
+.bt-login{
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.bt-login-input{
+    padding: 5px;
+    color: #2f3d2d;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    margin: auto;
+}
+
+.bt-login-input input {
+    padding: 5px;
+    color: #2f3d2d;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    background: #ffffff;
+}
+.page-header{
+    font-family: 'Comfortaa', cursive;
+    color: #7c4d63;
+    text-align: center;
+}
