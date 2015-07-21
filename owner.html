@@ -40,44 +40,279 @@
     </div>
 </nav>
 <section>
-    <div class="bt-overlay">
-        <div class="container-fluid">
-            <div class="page-header">
-                <h4>Make a Reservation</h4>
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Date</li></span>
-                <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Time</li></span>
-                <input type="time" class="form-control" placeholder="Time" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Name</li></span>
-                <input type="text" class="form-control" placeholder="Enter your Full Name" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Email</li></span>
-                <input type="email" class="form-control" placeholder="example@domain.com"" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Phone</li></span>
-                <input type="tel" class="form-control" placeholder="Enter your Phone" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Party Size</li></span>
-                <input type="number" class="form-control" placeholder="# Guests" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Special Requests</li></span>
-                <input type="text" class="form-control" placeholder="eg. Birthday Cake, Music etc." aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group bt-login-input " role="group">
-                <button type="button" class="btn btn-default fa-btn-inverse">
-                    <i class="fa fa-check-square-o "></i> Book
-                </button>
-                <a href="#" class="btn  fa-bt-transparent">
-                    Modify Existing Reservation?
+    <div class="container bt-box">
+        <ul class="nav nav-tabs nav-justified fa-bt-transparent" id="bt-reservation-tb">
+            <li class=" col-xs-3">
+                <a class="fa-bt-transparent" href="#reservation"  data-toggle="tab">
+                    <span class="glyphicon glyphicon-calendar fa-bt-transparent"></span>
+                    <span class="bt-tab-text">Reservations</span>
                 </a>
+            </li>
+            <li class="active col-xs-3">
+                <a class="fa-bt-transparent" href="#seating" data-toggle="tab">
+                    <span class="glyphicon glyphicon-th fa-bt-transparent"></span>
+                    <span class="bt-tab-text">Seating</span>
+                </a>
+            </li>
+            <li class="col-xs-3">
+                <a class="fa-bt-transparent" href="#profile" data-toggle="tab">
+                    <span class="glyphicon glyphicon-user fa-bt-transparent"></span>
+                    <span class="bt-tab-text">Profile</span>
+                </a>
+            </li>
+            <li class="col-xs-3">
+                <a class="fa-bt-transparent" href="#settings" data-toggle="tab">
+                    <span class="glyphicon glyphicon-cog fa-bt-transparent"></span>
+                    <span class="bt-tab-text">Settings</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div class="tab-pane " id="reservation">
+                <section class="container-fluid bt-vert-padding">
+                    <section class="row bt-vert-padding" id="reservation-details-search">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Reservation #">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search fa-bt-transparent" aria-hidden="true"></span></button>
+                            </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row bt-table-header bt-vert-padding" id="reservation-details-hd">
+                        <div class="col-xs-2">Conf Id</div>
+                        <div class="col-xs-4">Name</div>
+                        <div class="col-xs-3">Date & Time</div>
+                        <div class="col-xs-1">#</div>
+                        <div class="col-xs-2">Details</div>
+                    </section> 
+                    <section id="reservation-details">
+                        <section class="row bt-table-row bt-vert-padding">
+                            <div class="col-xs-2">1112</div>
+                            <div class="col-xs-4">Danny Boyle</div>
+                            <div class="col-xs-3">11/11/2015 1:30pm</div>
+                            <div class="col-xs-1">2</div>
+                            <div class="col-xs-2">
+                                <div class="input-group fa-bt-transparent">
+                                    <button class="btn btn-xs">
+                                        <span class="glyphicon glyphicon-share fa-bt-transparent"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row bt-table-row bt-vert-padding">
+                            <div class="col-xs-2">1112</div>
+                            <div class="col-xs-4">Danny Boyle</div>
+                            <div class="col-xs-3">11/11/2015 1:30pm</div>
+                            <div class="col-xs-1">2</div>
+                            <div class="col-xs-2">
+                                <div class="input-group fa-bt-transparent">
+                                    <button class="btn btn-xs">
+                                        <span class="glyphicon glyphicon-share fa-bt-transparent"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row bt-table-row bt-vert-padding">
+                            <div class="col-xs-2">1112</div>
+                            <div class="col-xs-4">Danny Boyle</div>
+                            <div class="col-xs-3">11/11/2015 1:30pm</div>
+                            <div class="col-xs-1">2</div>
+                            <div class="col-xs-2">
+                                <div class="input-group fa-bt-transparent">
+                                    <button class="btn btn-xs">
+                                        <span class="glyphicon glyphicon-share fa-bt-transparent"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row bt-table-row bt-vert-padding">
+                            <div class="col-xs-2">1112</div>
+                            <div class="col-xs-4">Danny Boyle</div>
+                            <div class="col-xs-3">11/11/2015 1:30pm</div>
+                            <div class="col-xs-1">2</div>
+                            <div class="col-xs-2">
+                                <div class="input-group fa-bt-transparent">
+                                    <button class="btn btn-xs">
+                                        <span class="glyphicon glyphicon-share fa-bt-transparent"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row bt-table-row bt-vert-padding">
+                            <div class="col-xs-2">1112</div>
+                            <div class="col-xs-4">Danny Boyle</div>
+                            <div class="col-xs-3">11/11/2015 1:30pm</div>
+                            <div class="col-xs-1">2</div>
+                            <div class="col-xs-2">
+                                <div class="input-group fa-bt-transparent">
+                                    <button class="btn btn-xs">
+                                        <span class="glyphicon glyphicon-share fa-bt-transparent"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <section id="reservation-details-pagination">
+                        <nav class="col-sm-6  col-xs-12">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </section>
+            </div>
+            <div role="tabpanel " class="active tab-pane" id="seating">
+                <section class="container-fluid bt-vert-padding">
+                    <section class="col-sm-6 col-xs-12" id="seating-details-table">
+                        <section class="row bt-table-header">
+                            <section class="col-xs-2">
+                                Table
+                            </section>
+                            <section class="col-xs-2">
+                                Size
+                            </section>
+                            <section class="col-xs-3">
+                                Status
+                            </section>
+                            <section class="col-xs-3">
+                                Time
+                            </section>
+                            <section class="col-xs-2">
+                                Cnf
+                            </section>
+                        </section>
+                        <section id="seating-details">
+                            <section class="row bt-table-row">
+                                <section class="col-xs-2">
+                                    9
+                                </section>
+                                <section class="col-xs-2">
+                                    3
+                                </section>
+                                <section class="col-xs-3">
+                                    Available
+                                </section>
+                                <section class="col-xs-3">
+
+                                </section>
+                                <section class="col-xs-2">
+
+                                </section>
+                            </section>
+                            <section class="row bt-table-row">
+                                <section class="col-xs-2">
+                                    9
+                                </section>
+                                <section class="col-xs-2">
+                                    3
+                                </section>
+                                <section class="col-xs-3">
+                                    Occupied
+                                </section>
+                                <section class="col-xs-3">
+                                    1:30PM
+                                </section>
+                                <section class="col-xs-2">
+                                    11233
+                                </section>
+                            </section>
+                            <section class="row bt-table-row">
+                                <section class="col-xs-2">
+                                    9
+                                </section>
+                                <section class="col-xs-2">
+                                    3
+                                </section>
+                                <section class="col-xs-3">
+                                    Occupied
+                                </section>
+                                <section class="col-xs-3">
+                                    1:30PM
+                                </section>
+                                <section class="col-xs-2">
+                                    11233
+                                </section>
+                            </section>
+                            <section class="row bt-table-row">
+                                <section class="col-xs-2">
+                                    9
+                                </section>
+                                <section class="col-xs-2">
+                                    3
+                                </section>
+                                <section class="col-xs-3">
+                                    Available
+                                </section>
+                                <section class="col-xs-3">
+
+                                </section>
+                                <section class="col-xs-2">
+
+                                </section>
+                            </section>
+                            <section class="row bt-table-row">
+                                <section class="col-xs-2">
+                                    9
+                                </section>
+                                <section class="col-xs-2">
+                                    3
+                                </section>
+                                <section class="col-xs-3">
+                                    Occupied
+                                </section>
+                                <section class="col-xs-3">
+                                    1:30PM
+                                </section>
+                                <section class="col-xs-2">
+                                    11233
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-sm-6 col-xs-12" id="seating-layout">
+
+                    </section>
+                </section>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+                <section class="container">
+                    Reservation
+                </section>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="settings">
+                <section class="container">
+                    Reservation
+                </section>
             </div>
         </div>
     </div>
