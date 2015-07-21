@@ -42,43 +42,80 @@
 </nav>
 <section>
     <div class="bt-overlay">
-        <div class="container-fluid">
+        <div class="container">
             <div class="page-header">
                 <h4>Make a Reservation</h4>
             </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Date</li></span>
-                <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Time</li></span>
-                <input type="time" class="form-control" placeholder="Time" aria-describedby="basic-addon1">
+            <div class="row bt-vert-padding">
+                <section>
+                    <div class=" bt-vert-padding col-xs-12 col-sm-3 col-sm-offset-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse" >Date</span>
+                            <input type="date" class="form-control" placeholder="Date" >
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class=" bt-vert-padding col-xs-12  col-sm-3 ">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse" >Time</span>
+                            <input type="time" class="form-control" placeholder="Time">
+                        </div>
+                    </div>
+                </section>
+                <section >
+                    <div class="  bt-vert-padding col-xs-12 col-sm-2 ">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse">Party Size</li></span>
+                            <input type="number" class="form-control" placeholder="#">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class=" bt-vert-padding col-xs-12 col-sm-8 col-sm-offset-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse" >Name</span>
+                            <input type="text" class="form-control" placeholder="Enter your name" >
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class=" bt-vert-padding col-xs-12 col-sm-4 col-sm-offset-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse" >Phone</span>
+                            <input type="tel" class="form-control" placeholder="(xxx) xxx xxxx" >
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class=" bt-vert-padding col-xs-12 col-sm-4 ">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse" >Email</span>
+                            <input type="email" class="form-control" placeholder="example@domain.com">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class=" bt-vert-padding col-xs-12 col-sm-8 col-sm-offset-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon fa-bt-inverse" >Special Requests</span>
+                            <input type="text" class="form-control" placeholder="eg. Birthday, Aniversay etc.">
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Name</li></span>
-                <input type="text" class="form-control" placeholder="Enter your Full Name" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Email</li></span>
-                <input type="email" class="form-control" placeholder="example@domain.com"" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Phone</li></span>
-                <input type="tel" class="form-control" placeholder="Enter your Phone" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Party Size</li></span>
-                <input type="number" class="form-control" placeholder="# Guests" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm bt-login-input">
-                <span class="input-group-addon fa-bt-inverse" id="basic-addon1">Special Requests</li></span>
-                <input type="text" class="form-control" placeholder="eg. Birthday Cake, Music etc." aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group bt-login-input " role="group">
-                <button type="button" class="btn btn-default fa-btn-inverse">
-                    <i class="fa fa-check-square-o "></i> Book
-                </button>
-                <a href="reservation.html" class="btn  fa-bt-transparent">
-                    Modify Existing Reservation?
-                </a>
+            <div class="input-group bt-login-input bt-vert-margin" role="group">
+                <section>
+                    <div class="input-group bt-login-input " role="group">
+                        <button type="button" class="btn btn-default fa-btn-inverse">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            Submit
+                        </button>
+                        <a href="reservation.html" class="btn  fa-bt-transparent">
+                            Modify Existing Reservation?
+                        </a>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

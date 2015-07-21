@@ -1,8 +1,9 @@
 @media all {
     html {
-        background-image: url("../Images/pattern1.jpg");
-        background-repeat: repeat;
-        background-attachment: fixed;
+        background-image: url("../Images/pattern1.jpg"), url("../Images/fork.png");
+        background-position: left top, left bottom;
+        background-repeat: repeat , no-repeat;
+        background-attachment: fixed, fixed;
         font-family: 'Source Sans Pro', Arial, sans-serif;
         font-size: 16px;
     }
@@ -66,8 +67,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
         /*background: radial-gradient(#B2E7B9, #DCFDDD, #4D8E43);*/
         background: radial-gradient(#CDCDCD, #FFF, #8B8B8B);
         border-radius: 50%;
