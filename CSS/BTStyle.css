@@ -152,10 +152,28 @@
     #seating-details-table{
         padding: 0;
     }
+    .bt-thumb-img{
+        height: 140px;
+        width: 140px;
+        border: 1px solid #5f3d4c;
+        box-shadow: .2em .2em .5em #777;
+        border-radius: .5em;
+        background: linear-gradient(#7c4d63,#A9728B);
+    }
+    .bt-circle-img{
+        border-radius: 50%;
+        background: radial-gradient(#A9728B,#7c4d63);
+    }
+    .bt-table-layout{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 
 @media (min-width: 512px) {
-    #bt-reservation-tb span.bt-tab-text {
+    #bt-reservation-tb span.bt-tab-text, .bt-tab-text {
         display: inline;
     }
 }
@@ -163,10 +181,17 @@
     ul.nav-tabs.nav-justified>li {
         float: none;
     }
+    .bt-thumb-img{
+        height: 100px;
+        width: 100px;
+    }
 }
 
 
 @media (min-width: 1200px) {
-
+    .bt-thumb-img{
+        height: 140px;
+        width: 140px;
+    }
 }
 

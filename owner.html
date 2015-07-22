@@ -42,28 +42,34 @@
 <section>
     <div class="container bt-box">
         <ul class="nav nav-tabs nav-justified fa-bt-transparent" id="bt-reservation-tb">
-            <li class=" col-xs-3">
+            <li class=" col-xs-2">
                 <a class="fa-bt-transparent" href="#reservation"  data-toggle="tab">
                     <span class="glyphicon glyphicon-calendar fa-bt-transparent"></span>
                     <span class="bt-tab-text">Reservations</span>
                 </a>
             </li>
-            <li class="active col-xs-3">
+            <li class=" col-xs-2">
                 <a class="fa-bt-transparent" href="#seating" data-toggle="tab">
                     <span class="glyphicon glyphicon-th fa-bt-transparent"></span>
                     <span class="bt-tab-text">Seating</span>
                 </a>
             </li>
-            <li class="col-xs-3">
+            <li class=" col-xs-2">
                 <a class="fa-bt-transparent" href="#profile" data-toggle="tab">
                     <span class="glyphicon glyphicon-user fa-bt-transparent"></span>
                     <span class="bt-tab-text">Profile</span>
                 </a>
             </li>
-            <li class="col-xs-3">
+            <li class="col-xs-2">
                 <a class="fa-bt-transparent" href="#settings" data-toggle="tab">
                     <span class="glyphicon glyphicon-cog fa-bt-transparent"></span>
                     <span class="bt-tab-text">Settings</span>
+                </a>
+            </li>
+            <li class="col-xs-2 active">
+                <a class="fa-bt-transparent" href="#contacts" data-toggle="tab">
+                    <span class="glyphicon glyphicon-user fa-bt-transparent"></span>
+                    <span class="bt-tab-text">Contacts</span>
                 </a>
             </li>
         </ul>
@@ -73,7 +79,7 @@
             <div class="tab-pane " id="reservation">
                 <section class="container-fluid bt-vert-padding">
                     <section class="row bt-vert-padding" id="reservation-details-search">
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-4 col-xs-12 col-sm-offset-4">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search Reservation #">
                             <span class="input-group-btn">
@@ -191,7 +197,7 @@
                     </section>
                 </section>
             </div>
-            <div role="tabpanel " class="active tab-pane" id="seating">
+            <div role="tabpanel " class=" tab-pane" id="seating">
                 <section class="container-fluid bt-vert-padding">
                     <section class="col-sm-6 col-xs-12" id="seating-details-table">
                         <section class="row bt-table-header">
@@ -300,20 +306,315 @@
                         </section>
                     </section>
                     <section class="col-sm-6 col-xs-12" id="seating-layout">
-
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                                <div class="bt-thumb-img bt-circle-img center-block bt-vert-margin">
+                                    <article class="fa-bt text-center bt-table-layout">
+                                        <div>#1</div>
+                                        <div>Occupied</div>
+                                        <div>11234</div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                                <div class="bt-thumb-img center-block bt-vert-margin">
+                                    <article class="fa-bt text-center bt-table-layout">
+                                        <div>#1</div>
+                                        <div>Occupied</div>
+                                        <div>11234</div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                                <div class="bt-thumb-img bt-circle-img center-block bt-vert-margin">
+                                    <article class="fa-bt text-center bt-table-layout">
+                                        <div>#1</div>
+                                        <div>Occupied</div>
+                                        <div>11234</div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </section>
             </div>
-            <div role="tabpanel" class="tab-pane" id="profile">
+            <div role="tabpanel" class="tab-pane " id="profile">
                 <section class="container-fluid">
-                    <div class="row input-group">
-                        <input type="">
-                    </div>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class=" col-xs-12  col-sm-12 bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <label class="input-group-addon fa-bt-inverse  " >
+                                        Name
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Enter Restaurant name" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4 bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </span>
+                                    <input type="tel" class="form-control" placeholder="(xxx) xxx xxxx" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </span>
+                                    <input type="tel" class="form-control" placeholder="(xxx) xxx xxxx" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </span>
+                                    <input type="tel" class="form-control" placeholder="(xxx) xxx xxxx" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-globe"></span>
+                                    </span>
+                                    <input type="url" class="form-control" placeholder="www.company.com" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" placeholder="example@company.com" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" placeholder="example@company.com" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="address line 1" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="address line 2" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="City" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="State" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Country" >
+                                </div>
+                            </div>
+                            <div class=" col-xs-12  col-sm-4  bt-vert-padding">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon fa-bt-inverse  " >
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Zip" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group bt-login-input bt-vert-margin" role="group">
+                            <section>
+                                <div class=" bt-vert-padding col-xs-12">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default fa-btn-inverse">
+                                            <span class="glyphicon glyphicon-ok"></span>
+                                            Save</button>
+                                        <button type="button" class="btn btn-default fa-btn-inverse">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </form>
                 </section>
             </div>
             <div role="tabpanel" class="tab-pane" id="settings">
                 <section class="container">
                     Reservation
+                </section>
+            </div>
+            <div role="tabpanel" class="tab-pane active" id="contacts">
+                <section class="container-fluid">
+                    <section id="searchBox">
+                        <form class="form-inline text-center center-block" id="reservationByDateSearch">
+                            <div class="form-group ">
+                                <div class="input-group bt-vert-padding">
+                                    <span class="input-group-addon fa-bt-inverse">From</span>
+                                    <span>
+                                        <input class="form-control" type="date" name="fromDate">
+                                        <input class="form-control" type="time" name="fromTime">
+                                    </span>
+                                </div>
+                                <div class="input-group bt-vert-padding">
+                                    <span class="input-group-addon fa-bt-inverse">To</span>
+                                    <span>
+                                        <input class="form-control" type="date" name="toDate">
+                                        <input class="form-control" type="time" name="toTime">
+                                    </span>
+                                </div>
+                                <div class="input-group bt-vert-padding">
+                                    <span class="input-group-addon fa-bt-inverse">Name</span>
+                                    <input type="text" class="form-control" name="searchBox" placeholder="Search CNF # / Name">
+                                </div>
+                                <button type="button" class="btn btn-default fa-bt-inverse bt-vert-padding form-control">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+                    <section id="searchResultBox" class="bt-vert-margin">
+                        <article class="bt-vert-margin">
+                            <div class="row bt-table-header">
+                                <div class="col-xs-2">CNF #</div>
+                                <div class="col-xs-4">Name</div>
+                                <div class="col-xs-4">Time</div>
+                                <div class="col-xs-2"></div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bt-table-row">
+                                <div class="col-xs-2">11234</div>
+                                <div class="col-xs-4">Micheal Angelo</div>
+                                <div class="col-xs-4">10/10/2014 1:30PM</div>
+                                <div class="col-xs-2">
+                                    <a href="reservationdetails.html" class="btn btn-default btn-xs fa-btn-inverse ">
+                                        <span class="glyphicon glyphicon-share"></span>
+                                        <span class="bt-tab-text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="bt-vert-margin text-center">
+                            <nav>
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-menu-left"></span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a> </li>
+                                    <li><a href="#">3</a> </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-menu-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </section>
                 </section>
             </div>
         </div>
