@@ -9,18 +9,24 @@
     }
     body{
         background: none;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        color: #7c4d63;
     }
     .glyphicon{
         color: #7c4d63;
+
     }
 
     .navbar{
-        background: linear-gradient(#CAF2D0, #CCE9CB, #BADFB4);
+        background: linear-gradient(#82ac8c, #82ac8c, #82ac8c);
         border: none;
         border-radius: 0px;
-        box-shadow: .25em .25em 1em #132213;
+        box-shadow: .1em .1em 1em #315731;
         z-index: 999;
-        color: #A9728B;
+        color: #462c40;
+    }
+    .navbar-nav>li>a{
+        color: ##ffffff;
     }
 
     .navbar-brand{
@@ -29,7 +35,7 @@
         font-weight: 600;
         color: #7c4d63;
     }
-    .bt-navbar-brand-logo{
+    .bt-navbar-brand-logo {
         color: #BADFB4;
         background: #97627a;
         padding: .25em;
@@ -42,7 +48,8 @@
     }
 
     .fa-bt-inverse, .fa-btn-inverse{
-        color: #A9728B;
+        color: #7c4d63;
+        background: linear-gradient(rgba(238, 237, 233, 0.22), rgba(0, 0, 0, 0.11));
     }
     .fa-btn-inverse:hover{
         background: linear-gradient(#A9728B, #7c4d63);
@@ -78,6 +85,7 @@
     .bt-overlay, .bt-box    {
         /*background: radial-gradient(#B2E7B9, #DCFDDD, #4D8E43);*/
         background: linear-gradient(#dfdfdf, #FFF, #f0f0f0);
+        /*background: radial-gradient(#F0F0F0, rgba(215, 239, 215, 0.63));*/
         box-shadow: .2em .2em 1em #222;
         border-radius: 5px;
     }
@@ -114,6 +122,7 @@
         padding: .75em 0;
         background: rgba(124, 77, 99, 0.5);
         color: #ffffff;
+
     }
     .bt-table-row{
         padding: .5em 0;
@@ -170,6 +179,11 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
+    .bt-headline{
+        padding: .5em;
+        background: linear-gradient(rgba(164, 1, 0, 0.05), rgba(169, 114, 139, 0.43));
+        border-radius: .3em ;
+    }
 }
 
 @media (min-width: 512px) {
@@ -184,6 +198,12 @@
     .bt-thumb-img{
         height: 100px;
         width: 100px;
+    }
+    .bt-table-header{
+        font-size: 0.9em;
+    }
+    .bt-table-row{
+        font-size: 0.9em;
     }
 }
 
