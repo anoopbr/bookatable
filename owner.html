@@ -19,6 +19,7 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Poiret+One|Calligraffitti|Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
 </head>
+<body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -39,8 +40,8 @@
         </div>
     </div>
 </nav>
-<section>
-    <div class="container bt-box">
+<section class="container-fluid">
+    <div class=" bt-box">
         <ul class="nav nav-tabs nav-justified fa-bt-transparent" id="bt-reservation-tb">
             <li class=" col-xs-2 active">
                 <a class="fa-bt-transparent" href="#reservation"  data-toggle="tab">
@@ -76,14 +77,14 @@
 
 
         <div class="tab-content">
-            <div class="tab-pane active" id="reservation">
+            <div class="tab-pane " id="reservation">
                 <section class="container-fluid bt-vert-padding">
                     <section class="row bt-vert-padding" id="reservation-details-search">
                         <div class="col-sm-4 col-xs-12 col-sm-offset-4">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search Reservation #">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search fa-bt-transparent" aria-hidden="true"></span></button>
+                                <button class="btn btn-default fa-btn-inverse" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                             </span>
                             </div>
                         </div>
@@ -135,7 +136,7 @@
                         </section>
                     </section>
                     <section id="reservation-details-pagination">
-                        <nav class="col-sm-6  col-xs-12">
+                        <nav class="col-sm-12  col-xs-12 text-center">
                             <ul class="pagination">
                                 <li>
                                     <a href="#">
@@ -279,7 +280,7 @@
                                     <article class="fa-bt text-center bt-table-layout">
                                         <div>#1</div>
                                         <div>Occupied</div>
-                                        <div>11234</div>
+                                        <div><a href="reservationdetails.html" class="btn btn-xs btn-default fa-bt-transparent">11234</a> </div>
                                     </article>
                                 </div>
                             </div>
@@ -288,7 +289,7 @@
                                     <article class="fa-bt text-center bt-table-layout">
                                         <div>#1</div>
                                         <div>Occupied</div>
-                                        <div>11234</div>
+                                        <div><a href="reservationdetails.html" class="btn btn-xs btn-default fa-bt-transparent">11234</a> </div>
                                     </article>
                                 </div>
                             </div>
@@ -297,7 +298,7 @@
                                     <article class="fa-bt text-center bt-table-layout">
                                         <div>#1</div>
                                         <div>Occupied</div>
-                                        <div>11234</div>
+                                        <div><a href="reservationdetails.html" class="btn btn-xs btn-default fa-bt-transparent">11234</a> </div>
                                     </article>
                                 </div>
                             </div>
@@ -306,7 +307,7 @@
                 </section>
             </div>
             <div class="tab-pane " id="profile">
-                <section class="container-fluid">
+                <section class="container-fluid bt-vert-padding">
                     <form class="form-horizontal">
                         <div class="form-group">
                             <div class=" col-xs-12  col-sm-12 bt-vert-padding">
@@ -431,11 +432,13 @@
                     </form>
                 </section>
             </div>
-            <div class="tab-pane " id="settings">
-                <section class="">
+            <div class="tab-pane active" id="settings">
+                <section class="container-fluid bt-vert-padding">
                     <form class="form-inline bt-vert-padding">
-                        <div class="form-group  col-sm-10 col-sm-offset-1 col-xs-12">
-                            <h5 class="bt-headline">General Settings</h5>
+                        <div class="form-group  col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                            <h5 class="bt-headline">
+                                <span class="fa fa-cog fa-spin"></span>
+                                General Settings</h5>
                         </div>
                         <div class="form-group  col-sm-3 col-sm-offset-1 col-xs-12">
                             <span class="fa-bt-transparent">
@@ -443,8 +446,10 @@
                             </span>
                             <span class="fa-bt-transparent">Auto Assign Enabled</span>
                         </div>
-                        <div class="form-group  col-sm-10 col-sm-offset-1 col-xs-12">
-                            <h5 class="bt-headline">Hours of Operation</h5>
+                        <div class="form-group  col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                            <h5 class="bt-headline">
+                                <span class="fa fa-clock-o fa-pulse"></span>
+                                Hours of Operation</h5>
                         </div>
                         <section class="text-right">
                             <div class="form-group col-xs-12 col-sm-5 col-sm-offset-1">
@@ -534,8 +539,10 @@
                         </div>
                     </form>
                     <article>
-                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                            <h5 class="bt-headline">Holidays</h5>
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                            <h5 class="bt-headline">
+                                <span class="fa fa-calendar-o"></span>
+                                Holidays</h5>
                         </div>
                         <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
                             <form class="form-inline bt-vert-padding">
@@ -549,9 +556,9 @@
                                         <input type="text" class="form-control">
                                     </div>
                                     <div class="input-group input-group-sm">
-                                        <button class="btn btn-default btn-sm">
-                                            <span class="glyphicon glyphicon-ok"></span>
-                                            Save
+                                        <button class="btn btn-default btn-sm fa-btn-inverse">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Add Holiday
                                         </button>
                                     </div>
                                 </div>
@@ -559,43 +566,169 @@
                         </div>
                         <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
                             <div class="row bt-table-header">
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     Date
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     Occasion
                                 </div>
                             </div>
                             <div class="row bt-table-row">
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     10/10/2015
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     Thanksgiving
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default fa-btn-inverse btn-xs">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        <span class="bt-tab-text">Delete</span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="row bt-table-row">
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     10/10/2015
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     Thanksgiving
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default fa-btn-inverse btn-xs">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        <span class="bt-tab-text">Delete</span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="row bt-table-row">
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     10/10/2015
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                     Thanksgiving
                                 </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default fa-btn-inverse btn-xs">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        <span class="bt-tab-text">Delete</span>
+                                    </button>
+                                </div>
                             </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                            <h5 class="bt-headline">
+                                <span class="fa fa-th"></span>
+                                Seating</h5>
+                        </div>
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                            <form class="form-inline bt-vert-padding">
+                                <div class="form-group">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon fa-bt-inverse">Type </span>
+                                        <select class="form-control">
+                                            <option>round</option>
+                                            <option>rectangle</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon fa-bt-inverse">Size </span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group input-group-sm">
+                                        <button class="btn btn-default btn-sm fa-btn-inverse">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Add Table
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                                    <div class="row bt-table-header">
+                                        <div class="col-xs-3">
+                                            Table #
+                                        </div>
+                                        <div class="col-xs-3">
+                                            Type
+                                        </div>
+                                        <div class="col-xs-3">
+                                            Size
+                                        </div>
+                                    </div>
+                                    <div class="row bt-table-row">
+                                        <div class="col-xs-3">
+                                            9
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <span class="fa fa-square"></span>
+                                            <span class="bt-tab-text">rectangle</span>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            4
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <button class="btn btn-default fa-btn-inverse btn-xs">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                                <span class="bt-tab-text">Delete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row bt-table-row">
+                                        <div class="col-xs-3">
+                                            7
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <span class="fa fa-circle"></span>
+                                            <span class="bt-tab-text">round</span>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            4
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <button class="btn btn-default fa-btn-inverse btn-xs">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                                <span class="bt-tab-text">Delete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row bt-table-row">
+                                        <div class="col-xs-3">
+                                            9
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <span class="fa fa-square"></span>
+                                            <span class="bt-tab-text">square</span>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            4
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <button class="btn btn-default fa-btn-inverse btn-xs">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                                <span class="bt-tab-text">Delete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </article>
                 </section>
             </div>
             <div class="tab-pane " id="contacts">
-                <section class="container-fluid">
+                <section class="container-fluid bt-vert-padding">
                     <section id="searchBox">
                         <form class="form-inline text-center center-block" id="reservationByDateSearch">
                             <div class="form-group ">
@@ -617,7 +750,7 @@
                                     <span class="input-group-addon fa-bt-inverse">Name</span>
                                     <input type="text" class="form-control" name="searchBox" placeholder="Search CNF # / Name">
                                 </div>
-                                <button type="button" class="btn btn-default fa-bt-inverse bt-vert-padding form-control">
+                                <button type="button" class="btn btn-default fa-btn-inverse bt-vert-padding form-control">
                                     <span class="glyphicon glyphicon-search"></span>
                                 </button>
                             </div>

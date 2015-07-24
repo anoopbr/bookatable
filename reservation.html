@@ -40,12 +40,12 @@
         </div>
     </div>
 </nav>
-<section class="container">
+<section class="container-fluid">
     <form class="form-horizontal">
         <div class="bt-overlay">
             <div class="container">
                 <div class="page-header">
-                    <h4>Reservation Details</h4>
+                    <h4>Cancel/Modify Reservation</h4>
                 </div>
                 <div class="row">
                     <section class=" bt-vert-padding">
@@ -53,7 +53,7 @@
                             <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Search Reservation #">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search fa-bt-transparent" aria-hidden="true"></span></button>
+                                    <button class="btn btn-default fa-btn-inverse" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                                 </span>
                             </div>
                         </div>
@@ -62,13 +62,15 @@
                 <div class="row bt-vert-padding">
                     <section>
                         <div class=" bt-vert-padding col-xs-12 col-sm-10 col-sm-offset-2">
-                            <span class="fa-bt-transparent">Reservation for : Danny Boyyle</span>
+                            <span class="fa-bt-transparent">Reservation for  Danny Boyyle</span>
                         </div>
                     </section>
                     <section>
                         <div class=" bt-vert-padding col-xs-12 col-sm-3 col-sm-offset-2">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-addon fa-bt-inverse" >Date</span>
+                                <span class="input-group-addon fa-bt-inverse" >
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
                                 <input type="date" class="form-control" placeholder="Date" >
                             </div>
                         </div>
@@ -76,16 +78,20 @@
                     <section>
                         <div class=" bt-vert-padding col-xs-12  col-sm-3 ">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-addon fa-bt-inverse" >Time</span>
+                                <span class="input-group-addon fa-bt-inverse" >
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
                                 <input type="time" class="form-control" placeholder="Time">
                             </div>
                         </div>
                     </section>
                     <section >
-                        <div class="  bt-vert-padding col-xs-12 col-sm-2 ">
+                        <div class="  bt-vert-padding col-xs-12  col-sm-2 ">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-addon fa-bt-inverse">Party Size</li></span>
-                                <input type="number" class="form-control" placeholder="#">
+                                <span class="input-group-addon fa-bt-inverse">
+                                    <span class="fa fa-user-plus"></span>
+                                </span>
+                                <input type="number" class="form-control" placeholder="Number of Guests">
                             </div>
                         </div>
                     </section>
