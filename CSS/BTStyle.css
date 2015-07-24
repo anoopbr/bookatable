@@ -52,6 +52,14 @@
     .navbar-form .checkbox label, .navbar-form .radio label {
         color: #ffffff;
     }
+
+    .nav>li{
+        display: inline-block;
+    }
+    .nav.nav-tabs>.col-xs-2{
+        padding-right: 0;
+        padding-left: 0;
+    }
     .bt-navbar-btn{
         background: linear-gradient(#417182,#435c6f);
         box-shadow: .1em .1em .3em #ae5a50;
