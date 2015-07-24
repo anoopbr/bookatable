@@ -19,7 +19,7 @@
         border-color: #c06458;
         color: #c06458;
     }
-    .glyphicon{
+    .glyphicon,.icon-bar{
         color: #ffffff;
 
     }
@@ -31,10 +31,10 @@
         box-shadow: .1em .1em 1em #292929;
         border: 1px solid #e27f54;
         z-index: 999;
-        color: #66aaa2;
+        color: #fff;
     }
     .navbar-nav>li>a{
-        color: ##ffffff;
+        color: #ffffff;
     }
 
     .navbar-brand{
@@ -43,12 +43,39 @@
         font-weight: 600;
         color: #66aaa2;
     }
+    .navbar-default .navbar-nav>li>a{
+        color: #fff;
+    }
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #e1df57;
+    }
+    .navbar-form .checkbox label, .navbar-form .radio label {
+        color: #ffffff;
+    }
+    .bt-navbar-btn{
+        background: linear-gradient(#417182,#435c6f);
+        box-shadow: .1em .1em .3em #ae5a50;
+        color: #fff;
+    }
+    .bt-navbar-btn:hover{
+        background: linear-gradient(#e1df57, #e1df57);
+    }
     .bt-navbar-brand-logo {
-        color: #c06458;
-        background: #66aaa2;
-        padding: .25em;
+        color: #fff;
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.5em;
+        text-shadow: .1em .1em .3em #ae5a50;
+        text-transform: lowercase;
+    }
+    .fa-bt-brand-bg{
+        color: #88ce9b;
+    }
+    .fa-bt-brand-icon{
+        color: #ae5a50;
+        background: #ffffff;
+        padding: .5em;
+        margin-top: -.7em;
         border-radius: 50%;
-        box-shadow: .1em .1em .25em #555;
     }
 
     .fa-bt{
