@@ -1,13 +1,7 @@
 @media all {
     html {
-        background-image: url("../Images/pattern1.jpg"), url("../Images/fork.png");
-        background-position: left top, left bottom;
-        background-repeat: repeat , no-repeat;
-        background-attachment: fixed, fixed;
-        background: linear-gradient(#dfdfdf, #FFF, #f0f0f0);
-        background: repeating-radial-gradient(#5a9db2, #5492a7, #5a9db2);
-        font-family: 'Source Sans Pro', Arial, sans-serif;
-        font-size: 16px;
+        /*background: repeating-radial-gradient(#e6dfd5, #e6dfd5, #e6dfd5);*/
+        background: repeating-radial-gradient(#2291b2, #3081a7, #3b84b2);
     }
     body{
         background: none;
@@ -15,31 +9,21 @@
         color: #ffffff;
     }
 
-    input{
-        border-color: #c06458;
-        color: #c06458;
-    }
-    .glyphicon,.icon-bar{
+    .glyphicon{
         color: #ffffff;
 
     }
 
     .navbar{
-        background: linear-gradient(#e27f54, #d07250    );
+        background: linear-gradient(#e27f54, #ae4c18);
         /*background: linear-gradient(#66aaa2, #66aaa2);*/
         border-radius: 0px;
         box-shadow: .1em .1em 1em #292929;
         border: 1px solid #e27f54;
         z-index: 999;
-        color: #fff;
     }
-    .navbar-nav>li>a{
-        color: #ffffff;
-    }
-
     .navbar-brand{
         font-family: 'Comfortaa', cursive;
-        font-size: 1em;
         font-weight: 600;
         color: #66aaa2;
     }
@@ -62,7 +46,7 @@
     }
     .bt-navbar-btn{
         background: linear-gradient(#417182,#435c6f);
-        box-shadow: .1em .1em .3em #ae5a50;
+        box-shadow: .1em .1em .3em #9f514e;
         color: #fff;
     }
     .bt-navbar-btn:hover{
@@ -140,6 +124,8 @@
         /*background: radial-gradient(#F0F0F0, rgba(215, 239, 215, 0.63));*/
         /*box-shadow: .2em .2em 1em #222;*/
         /*border-radius: 5px;*/
+        position: relative;
+        margin-top: 80px;
     }
 
     .bt-login{
